@@ -8,14 +8,17 @@ public class Mascota {
     private int edad;
     private boolean cola;
     private String raza;
+    private int energia;
 
     public Mascota() {
+        energia = 1000;
     }
 
     public Mascota(String nombre, String apodo, String tipo){
         this.nombre = nombre;
         this.apodo = apodo;
         this.tipo = tipo;
+        this.energia = 1000;
     }
 
     public Mascota(String nombre, String apodo, String tipo, String color, int edad, boolean cola, String raza) {
@@ -26,6 +29,7 @@ public class Mascota {
         this.edad = edad;
         this.cola = cola;
         this.raza = raza;
+        this.energia = 1000;
     }
 
     public void  setNombre(String nombre){
@@ -75,6 +79,25 @@ public class Mascota {
         return raza;
     }
 
+    //SobreCarga de metodos, tienen mismo nombre pero reciben diferentes metodos
+    public int Pasear(int energiaRestar){
+        energia -= energiaRestar;
+        return energia;
+    }
+    /** y apretas espacio y ya se hace solo lo de abajo
+    /**
+     *
+     * @param energiaRestar
+     * @param vueltas
+     * @return
+     */
+    public int Pasear(int energiaRestar, int vueltas){
+        for (int i = 0 ; i < vueltas; i++){
+            energia -= energiaRestar;
+        }
+        return energia;
+    }
+
     @Override
     public String toString() {
         return "Mascota{" +
@@ -85,6 +108,7 @@ public class Mascota {
                 ", edad=" + edad +
                 ", cola=" + cola +
                 ", raza='" + raza + '\'' +
+                ", energia=" + energia +
                 '}';
     }
 }

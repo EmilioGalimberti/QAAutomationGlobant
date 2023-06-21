@@ -10,7 +10,10 @@ public class MascotaAPP {
         //si los atributos fueran publicos
         //mascota1.nombre = "aka";
         mascota1.setNombre("pepe");
+        mascota1.Pasear(100);
+        mascota1.Pasear(100, 2);
         System.out.println(mascota1.toString());
+
 
     }
 }
