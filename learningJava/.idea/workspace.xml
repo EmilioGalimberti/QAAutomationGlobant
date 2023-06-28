@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a28074d-7fc2-4cf0-ae66-a1434edff729" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ej7/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ej7/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ej7/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ej7/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ej7/src/Entity/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ej7/src/enunciado.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ejercicios/7/.idea/7.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clase1/clase1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/integradorEjemplo/integradorEjemplo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/proyectoJava1/proyectoJava1.iml" beforeDir="false" />
-    </list>
+    <list default="true" id="3a28074d-7fc2-4cf0-ae66-a1434edff729" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +17,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "vue.rearranger.settings.migration": "true"
@@ -42,6 +32,7 @@
       <option name="presentableId" value="Default" />
       <updated>1687908930260</updated>
       <workItem from="1687908931371" duration="17000" />
+      <workItem from="1687910988420" duration="11000" />
     </task>
     <servers />
   </component>
