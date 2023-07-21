@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a17dd973-787b-44b4-bebe-0cdee95ff90c" name="Changes" comment="" />
+    <list default="true" id="a17dd973-787b-44b4-bebe-0cdee95ff90c" name="Changes" comment="a">
+      <change beforePath="$PROJECT_DIR$/../learningJava/ej14/ej1/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ej1/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learningJava/ej14/ej1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ej1/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learningJava/ej14/ej1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ej1/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learningJava/ej14/ej1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ej1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learningJava/ej14/ej1/ej1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ej1/ej1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learningJava/ej14/ej1/src/entity/DiscountCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ej1/src/entity/DiscountCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learningJava/ej14/ej1/test/entity/DiscountCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ej1/test/entity/DiscountCalculatorTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,10 +41,23 @@
       <updated>1689811782172</updated>
       <workItem from="1689811783454" duration="15000" />
       <workItem from="1689899849548" duration="26000" />
+      <workItem from="1689901708079" duration="104000" />
     </task>
+    <task id="LOCAL-00001" summary="a">
+      <created>1689901782426</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689901782426</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
 </project>
