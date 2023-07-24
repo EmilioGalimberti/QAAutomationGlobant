@@ -1,5 +1,7 @@
+import service.ServiceMascota;
+
 import java.util.ArrayList;
-import java.util.Arrays;
+
 
 public class MascotaApp {
 
@@ -22,5 +24,10 @@ public class MascotaApp {
         System.out.println(nombreArrayList.size());
         nombreArrayList.remove("Chiquito");
         System.out.println(nombreArrayList.size());
+
+        ServiceMascota serviceMascota = new ServiceMascota();
+        serviceMascota.crearMascota();
+        serviceMascota.crearMascota();
+        serviceMascota.mostrarMascotas();
     }
 }
