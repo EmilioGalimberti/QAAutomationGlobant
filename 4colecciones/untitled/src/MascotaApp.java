@@ -1,8 +1,5 @@
 import service.ServiceMascota;
 
-import java.util.ArrayList;
-
-
 public class MascotaApp {
 
     public static void main(String[] args){
@@ -30,9 +27,12 @@ public class MascotaApp {
 //        serviceMascota.crearMascota();
 //        serviceMascota.mostrarMascotas();
 
-        serviceMascota.fabricaChiquitos(140);
-        serviceMascota.mostrarMascotas();
+        //serviceMascota.fabricaChiquitos(140);
+        //serviceMascota.mostrarMascotas();
         serviceMascota.fabricaMascotas(2);
+        serviceMascota.mostrarMascotas();
+        serviceMascota.actualizarMascota(0);
+        serviceMascota.actualizarApodoMascota(1);
         serviceMascota.mostrarMascotas();
     }
 }

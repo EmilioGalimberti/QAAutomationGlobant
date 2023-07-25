@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 public class ServiceMascota {
     private final Scanner leer;
+
+    //HASTA AHORA LO QUE VOY ENTENDIENDO ES QUE ESTO SERIA UN ARRAY DE OBJETOS
     private final ArrayList<Mascota> mascotas;
 
     //constructor para inicializarlo
@@ -22,11 +24,8 @@ public class ServiceMascota {
         System.out.println("Introducir tipo");
         String tipo = leer.next();
 
-        Mascota m = new Mascota(nombre, apodo, tipo);
-        mascotas.add(m);
-        return m;
+        return new Mascota(nombre, apodo, tipo);
     }
-
 
     public void mostrarMascotas(){
         System.out.println("Las mascotas actuales de la Lista Mascoas son");
@@ -48,8 +47,37 @@ public class ServiceMascota {
     public void fabricaMascotas(int cantidad){
         for (int i = 0 ; i < cantidad; i++){
             Mascota mascotaCreada = crearMascota();
+            mascotas.add(mascotaCreada);
             System.out.println(mascotaCreada.toString());
+        }
+    }
 
+    //TO dO añadir try and catth
+    public void actualizarApodoMascota(int index){
+        if (index <= (mascotas.size()-1)) {
+            System.out.println("Actualizara el apodo de la mascota que esta en la posicion " + index);
+            Mascota m = mascotas.get(index);
+            m.setApodo("Roberto");
+        }else {
+            System.out.println("El indice es erroneo");
+        }
+    }
+    public void actualizarMascota(int index){
+        if (index <= (mascotas.size()-1)) {
+            System.out.println("Actualizara la mascota que esta en la posicion " + index);
+            Mascota m = crearMascota();
+            mascotas.set(index, m);
+        } else {
+            System.out.println("El indice es erroneo");
+        }
+    }
+
+    public void eliminarMasocta(int index){
+        if (index <= (mascotas.size()-1)) {
+            System.out.println("Se eliminara la mascota que esta en la posicion " + index);
+            mascotas.remove(index);
+        }else {
+            System.out.println("El indice es erroneo");
         }
     }
 }
