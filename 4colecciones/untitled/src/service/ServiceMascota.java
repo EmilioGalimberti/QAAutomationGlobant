@@ -32,6 +32,7 @@ public class ServiceMascota {
         for (Mascota aux: mascotas) {
             System.out.println(aux.toString());
         }
+
         System.out.println("canitdad = " + mascotas.size());
     }
 
@@ -79,5 +80,16 @@ public class ServiceMascota {
         }else {
             System.out.println("El indice es erroneo");
         }
+    }
+
+    public void eliminarPorNombre(String nombre){
+        System.out.println("Se elimiinira la mascota con nombre " + nombre);
+        //En verdad no podria usar el foreach porque ConcurrentModificationExpetion
+//        for (Mascota aux : mascotas){
+//            if(aux.getNombre().equals(nombre)){
+//                mascotas.remove(aux);
+//            }
+//        }
+        mascotas.removeIf(aux -> aux.getNombre().equals(nombre));
     }
 }

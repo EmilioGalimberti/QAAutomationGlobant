@@ -31,8 +31,10 @@ public class MascotaApp {
         //serviceMascota.mostrarMascotas();
         serviceMascota.fabricaMascotas(2);
         serviceMascota.mostrarMascotas();
-        serviceMascota.actualizarMascota(0);
-        serviceMascota.actualizarApodoMascota(1);
+//        serviceMascota.actualizarMascota(0);
+//        serviceMascota.actualizarApodoMascota(1);
+//        serviceMascota.mostrarMascotas();
+        serviceMascota.eliminarPorNombre("emi");
         serviceMascota.mostrarMascotas();
     }
 }
