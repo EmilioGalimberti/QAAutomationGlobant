@@ -1,5 +1,7 @@
 import service.ServiceMascota;
 
+import java.util.Collection;
+
 public class MascotaApp {
 
     public static void main(String[] args){
@@ -35,6 +37,7 @@ public class MascotaApp {
 //        serviceMascota.actualizarApodoMascota(1);
 //        serviceMascota.mostrarMascotas();
         serviceMascota.eliminarPorNombre("emi");
+        serviceMascota.ordenar();
         serviceMascota.mostrarMascotas();
     }
 }

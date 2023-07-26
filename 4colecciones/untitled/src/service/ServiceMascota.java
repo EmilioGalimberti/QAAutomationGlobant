@@ -1,8 +1,7 @@
 package service;
 import entity.Mascota;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 public class ServiceMascota {
     private final Scanner leer;
@@ -92,4 +91,15 @@ public class ServiceMascota {
 //        }
         mascotas.removeIf(aux -> aux.getNombre().equals(nombre));
     }
+
+    public void ordenar(){
+        Collections.sort(mascotas , ordernarPorNombreDescd); //NI IDEA NO ME FUNCIONA
+    }
+
+    public static Comparator<Mascota> ordernarPorNombreDescd = new Comparator<Mascota>() {
+        @Override
+        public int compare(Mascota o1, Mascota o2) {
+            return o2.getNombre().compareTo(o1.getNombre());
+        }
+    };
 }
