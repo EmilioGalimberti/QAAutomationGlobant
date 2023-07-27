@@ -1,6 +1,8 @@
 package entity;
 
-public class Mascota {
+import java.util.Objects;
+
+public class Mascota implements Comparable<Mascota> {
     private String nombre;
     private String apodo;
     private String tipo;
@@ -98,6 +100,18 @@ public class Mascota {
         return energia;
     }
 
+    @Override // comparar una clase mascota contra otra clase mascota
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Mascota mascota)) return false;
+        return getEdad() == mascota.getEdad() && isCola() == mascota.isCola() && energia == mascota.energia && Objects.equals(getNombre(), mascota.getNombre()) && Objects.equals(getApodo(), mascota.getApodo()) && Objects.equals(getTipo(), mascota.getTipo()) && Objects.equals(getColor(), mascota.getColor()) && Objects.equals(getRaza(), mascota.getRaza());
+    }
+
+    @Override // codigo numerico en base a la clase
+    public int hashCode() {
+        return Objects.hash(getNombre(), getApodo(), getTipo(), getColor(), getEdad(), isCola(), getRaza(), energia);
+    }
+
     @Override
     public String toString() {
         return "Mascota{" +
@@ -110,5 +124,10 @@ public class Mascota {
                 ", raza='" + raza + '\'' +
                 ", energia=" + energia +
                 '}';
+    }
+
+    @Override // compara el objeto en el que esta ahora contra el que entra
+    public int compareTo(Mascota o) {
+        return this.nombre.compareTo(o.getNombre());
     }
 }

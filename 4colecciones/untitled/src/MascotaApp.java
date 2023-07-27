@@ -1,6 +1,6 @@
 import service.ServiceMascota;
 
-import java.util.Collection;
+
 
 public class MascotaApp {
 
@@ -36,8 +36,8 @@ public class MascotaApp {
 //        serviceMascota.actualizarMascota(0);
 //        serviceMascota.actualizarApodoMascota(1);
 //        serviceMascota.mostrarMascotas();
-        serviceMascota.eliminarPorNombre("emi");
-        serviceMascota.ordenar();
+//        serviceMascota.eliminarPorNombre("emi");
+//        serviceMascota.ordenar();
         serviceMascota.mostrarMascotas();
     }
 }
