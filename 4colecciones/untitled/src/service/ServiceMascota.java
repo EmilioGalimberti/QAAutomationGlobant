@@ -8,17 +8,17 @@ public class ServiceMascota {
 
     //HASTA AHORA LO QUE VOY ENTENDIENDO ES QUE ESTO SERIA UN ARRAY DE OBJETOS
     // LISTA
-    //private final ArrayList<Mascota> mascotas;
+    private final ArrayList<Mascota> mascotas;
     //conjuntos
     // La defirencia entre las listas y los conjuntos es que los conjuntos no permiten elementos duplicados
     //HashSet y TreeSet no aceptan duplicados
     //Los treeSet tienen la naturaleza de ordenar cosas
-    private final TreeSet<Mascota> mascotas;
+    //private final TreeSet<Mascota> mascotas;
 
     //constructor para inicializarlo
     public ServiceMascota() {
         this.leer =new Scanner(System.in).useDelimiter("\n");
-        this.mascotas = new TreeSet<>();
+        this.mascotas = new ArrayList<>();
     }
 
     public Mascota crearMascota(){
@@ -68,15 +68,15 @@ public class ServiceMascota {
 //            System.out.println("El indice es erroneo");
 //        }
 //    }
-    //public void actualizarMascota(int index){
-//        if (index <= (mascotas.size()-1)) {
-//            System.out.println("Actualizara la mascota que esta en la posicion " + index);
-//            Mascota m = crearMascota();
-//            mascotas.set(index, m);
-//        } else {
-//            System.out.println("El indice es erroneo");
-//        }
-//    }
+    public void actualizarMascota(int index){
+        if (index <= (mascotas.size()-1)) {
+            System.out.println("Actualizara la mascota que esta en la posicion " + index);
+            Mascota m = crearMascota();
+            mascotas.set(index, m);
+        } else {
+            System.out.println("El indice es erroneo");
+        }
+    }
 
     public void eliminarMasocta(int index){
         if (index <= (mascotas.size()-1)) {
@@ -98,6 +98,7 @@ public class ServiceMascota {
         mascotas.removeIf(aux -> aux.getNombre().equals(nombre));
     }
 
+    //No me funco
     //public void ordenar(){
     //    Collections.sort(mascotas , ordernarPorNombreDescd); //NI IDEA NO ME FUNCIONA
     //}

@@ -126,7 +126,7 @@ public class Mascota implements Comparable<Mascota> {
                 '}';
     }
 
-    @Override // compara el objeto en el que esta ahora contra el que entra
+    @Override // compara el objeto en el que esta ahora contra el que entra esto es para el treeSet
     public int compareTo(Mascota o) {
         return this.nombre.compareTo(o.getNombre());
     }
