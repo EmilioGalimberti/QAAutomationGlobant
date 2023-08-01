@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecdc4413-a220-4b56-af14-63742171b3ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Guia_Colecciones_1_1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Guia_Colecciones_1_1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ej55/src/entity/Pais.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ej55/src/services/ServicePaises.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +38,7 @@
       <workItem from="1690237529871" duration="32000" />
       <workItem from="1690324805989" duration="226000" />
       <workItem from="1690499230870" duration="18000" />
+      <workItem from="1690930619701" duration="122000" />
     </task>
     <servers />
   </component>

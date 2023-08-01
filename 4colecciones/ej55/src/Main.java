@@ -5,10 +5,7 @@ import services.ServicePaises;
 public class Main {
     public static void main(String[] args) {
         ServicePaises servicePaises = new ServicePaises();
-
         servicePaises.crearPaises();
         servicePaises.ordenarAlfabeticamente();
-        servicePaises.mostrarPaises();
-
     }
 }

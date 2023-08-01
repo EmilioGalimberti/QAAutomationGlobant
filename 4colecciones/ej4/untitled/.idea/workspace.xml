@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01125b66-54cc-4978-b9fd-8ba3ac40047c" name="Changes" comment="Ej4 Arraylist crear,agregar, ORDENAMIENTOS y filtrado">
-      <change afterPath="$PROJECT_DIR$/../ej5/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ej5/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ej5/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ej5/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ej5/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ej5/ej5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ej5/src/entity/Pais.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ej5/src/services/ServicePaises.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ej55/src/entity/Pais.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ej55/src/services/ServicePaises.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1690847662642</updated>
       <workItem from="1690847663706" duration="4145000" />
-      <workItem from="1690929565156" duration="619000" />
+      <workItem from="1690929565156" duration="924000" />
     </task>
     <task id="LOCAL-00001" summary="Ej4 Arraylist crear,agregar, ORDENAMIENTOS y filtrado">
       <created>1690851528345</created>
