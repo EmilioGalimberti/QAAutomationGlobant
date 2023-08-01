@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01125b66-54cc-4978-b9fd-8ba3ac40047c" name="Changes" comment="Ej4 Arraylist crear,agregar, ORDENAMIENTOS y filtrado">
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ej55/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ej55/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ej55/src/entity/Pais.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ej55/src/entity/Pais.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ej55/src/services/ServicePaises.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ej55/src/services/ServicePaises.java" afterDir="false" />
-    </list>
+    <list default="true" id="01125b66-54cc-4978-b9fd-8ba3ac40047c" name="Changes" comment="Ej4 Arraylist crear,agregar, ORDENAMIENTOS y filtrado" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +49,7 @@
       <updated>1690847662642</updated>
       <workItem from="1690847663706" duration="4145000" />
       <workItem from="1690929565156" duration="1394000" />
-      <workItem from="1690933430146" duration="211000" />
+      <workItem from="1690933430146" duration="514000" />
     </task>
     <task id="LOCAL-00001" summary="Ej4 Arraylist crear,agregar, ORDENAMIENTOS y filtrado">
       <created>1690851528345</created>

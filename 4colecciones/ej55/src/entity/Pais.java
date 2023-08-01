@@ -38,5 +38,9 @@ public class Pais{
     //no tiene  tanta libertar como el comparatero pero solo implica un sola forma de comparar Mas utilizado para los treeset
 
 
+    /*
+    equals se utiliza para verificar la igualdad entre objetos basándose en su contenido o valores.
+compareTo se utiliza para definir el orden natural de los objetos de una clase basándose en un criterio específico.
+     */
 
 }
