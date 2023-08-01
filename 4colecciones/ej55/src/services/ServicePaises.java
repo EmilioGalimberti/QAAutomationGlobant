@@ -2,10 +2,7 @@ package services;
 
 import entity.Pais;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
 public class ServicePaises {
 
@@ -18,33 +15,37 @@ public class ServicePaises {
     }
 
 
-    public void crearPaises(){
+    public void crearPaises() {
         String option;
-        do{
+        do {
             System.out.println("Ingrese un pais");
             String nombre = scanner.next();
             paises.add(new Pais(nombre));
             System.out.println("Desea crear otro pais?(si/no): ");
             option = scanner.next();
-        }while(!option.equals("no"));
+        } while (!option.equals("no"));
         mostrarPaises();
     }
 
-    public void mostrarPaises(){
+    public void mostrarPaises() {
         System.out.println("Los paises actuales de la set paises son");
-        for (Pais aux: paises){
+        for (Pais aux : paises) {
             System.out.println(aux.toString());
         }
         System.out.println("Cantidad = " + paises.size());
     }
 
-    public void ordenarAlfabeticamente(){
-        ArrayList<Pais> paisesListea = new ArrayList<>(paises);
-        paisesListea.sort(Pais.compararNombre);
-        System.out.println("Los paises actuales de la lista paises son");
-        for (Pais aux: paisesListea){
-            System.out.println(aux.toString());
+    public void eliminarPaisPorNombre(String nombrePais) {
+        Iterator<Pais> iterator = paises.iterator();
+        while (iterator.hasNext()) {
+            Pais pais = iterator.next();
+            if (pais.getNombre().equalsIgnoreCase(nombrePais)) {
+                iterator.remove();
+                System.out.println("País eliminado: " + pais.getNombre());
+                return;
+            }
         }
-        System.out.println("Cantidad = " + paisesListea.size());
+        System.out.println("País no encontrado en el conjunto.");
     }
+
 }

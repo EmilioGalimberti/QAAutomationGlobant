@@ -1,8 +1,8 @@
 package entity;
 
-import java.util.Comparator;
+import java.util.Objects;
 
-public class Pais {
+public class Pais{
     String nombre;
 
     public Pais(String nombre) {
@@ -17,17 +17,26 @@ public class Pais {
         this.nombre = nombre;
     }
 
-    public static Comparator<Pais> compararNombre = new Comparator<Pais>() {
-        @Override
-        public int compare(Pais o1, Pais o2) {
-            return o1.getNombre().compareTo(o2.getNombre());
-        }
-    };
-
     @Override
     public String toString() {
         return "Pais{" +
                 "nombre='" + nombre + '\'' +
                 '}';
     }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Pais pais)) return false;
+        return Objects.equals(getNombre(), pais.getNombre());
+    } // Le enseña a la clase a compararse consimo mismo Este caso me sirve para el tema de los sets que no son treeset
+    @Override
+    public int hashCode() {
+        return Objects.hash(getNombre());
+    } // Le da un hash a cada objeto creado y se evitan los repetidos
+
+    //tambien se puede usar el compareTo con el implemnets https://youtu.be/3Y1eMAySVeM?t=457
+    //no tiene  tanta libertar como el comparatero pero solo implica un sola forma de comparar Mas utilizado para los treeset
+
+
+
 }
