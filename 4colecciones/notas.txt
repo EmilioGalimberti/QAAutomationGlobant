@@ -1,0 +1,11 @@
+equals sirve para poner mas condicones de comparacion y se puede usar entre objetos
+el compareTo se utiliza para ordenar, hay que poner el implements Comparator
+
+Listas Lits
+Conjuntos Sets
+Mapas maps
+cada uno tiene sus tipos
+
+tambien estan los iterator lo voy a utilizar para elimanr elementos
+
+Comparator para comparar 
