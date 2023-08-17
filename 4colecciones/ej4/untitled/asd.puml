@@ -1,0 +1,25 @@
+@startuml
+class Main {
++ {static} void main(String[])
+}
+class entity.Pelicula {
+- String titulo
+- String director
+- int duracion
++ String getTitulo()
++ String getDirector()
++ int getDuracion()
++ String toString()
+}
+class service.ServicePelicula {
+~ Scanner scanner
+- List<Pelicula> peliculas
++ void crearPelicula()
++ void mostrarPeliculas()
++ void mostrarPeliculasMasUnaHora()
++ void ordenarPeliculasPorDuracionMayorAMenor()
++ void ordenarPeliculasPorDuracionMenorAMayor()
++ void ordenarPeliculasPorTitulo()
++ void ordenarPeliculasPorDirector()
+}
+@enduml
