@@ -1,0 +1,108 @@
+Asi lo resolvio el chatgpt
+
+import java.util.ArrayList;
+import java.util.Random;
+
+class RevolverDeAgua {
+    private int posicionActual;
+    private int posicionAgua;
+
+    public void llenarRevolver() {
+        Random random = new Random();
+        posicionActual = random.nextInt(6); // 6 posiciones en el tambor
+        posicionAgua = random.nextInt(6);
+    }
+
+    public boolean mojar() {
+        return posicionActual == posicionAgua;
+    }
+
+    public void siguienteChorro() {
+        posicionActual = (posicionActual + 1) % 6;
+    }
+
+    @Override
+    public String toString() {
+        return "Posición actual: " + posicionActual + ", Posición del agua: " + posicionAgua;
+    }
+}
+
+class Jugador {
+    private int id;
+    private String nombre;
+    private boolean mojado;
+
+    public Jugador(int id) {
+        this.id = id;
+        this.nombre = "Jugador " + id;
+        this.mojado = false;
+    }
+
+    public boolean disparo(RevolverDeAgua revolver) {
+        revolver.siguienteChorro();
+        if (revolver.mojar()) {
+            mojado = true;
+            return true;
+        }
+        return false;
+    }
+
+    public boolean estaMojado() {
+        return mojado;
+    }
+
+    @Override
+    public String toString() {
+        return nombre + " - " + (mojado ? "Mojado" : "Seco");
+    }
+}
+
+class Juego {
+    private ArrayList<Jugador> jugadores;
+    private RevolverDeAgua revolver;
+
+    public void llenarJuego(ArrayList<Jugador> jugadores, RevolverDeAgua revolver) {
+        this.jugadores = jugadores;
+        this.revolver = revolver;
+    }
+
+    public void ronda() {
+        while (true) {
+            for (Jugador jugador : jugadores) {
+                System.out.println(jugador);
+                if (jugador.disparo(revolver)) {
+                    System.out.println("¡" + jugador + " se mojó!");
+                    return;
+                }
+            }
+        }
+    }
+}
+
+public class JuegoRevolversitoDeAgua {
+    public static void main(String[] args) {
+        int numJugadores = 6;
+        RevolverDeAgua revolver = new RevolverDeAgua();
+        revolver.llenarRevolver();
+
+        ArrayList<Jugador> jugadores = new ArrayList<>();
+        for (int i = 1; i <= numJugadores; i++) {
+            jugadores.add(new Jugador(i));
+        }
+
+        Juego juego = new Juego();
+        juego.llenarJuego(jugadores, revolver);
+        juego.ronda();
+    }
+}
+
+
+RECOMENDACIONES NO HACER LAS CLASES SERVICIOS
+
+Y PARA ESTO ES EL WHILE TRUE DE RONDA
+El `while (true)` en el método `ronda()` crea un bucle infinito que permite que los jugadores sigan turnándose para disparar el revolver de agua hasta que alguien se moje y
+el juego termine. El bucle se ejecuta indefinidamente hasta que se cumple la condición de que algún jugador se moje y se finalice el juego usando `return`.
+Dentro de este bucle infinito, el código itera a través de la lista de jugadores y permite que cada uno intente disparar el revolver de agua una vez. Si un jugador se moja
+(la condición `if (jugador.disparo(revolver))` se cumple), el juego imprime un mensaje indicando quién se mojó y luego usa `return` para salir del bucle y finalizar el juego.
+Es importante notar que en este diseño particular, se asume que siempre habrá al menos un jugador que se mojará eventualmente (de lo contrario, el juego quedará en un bucle infinito).
+En una implementación más robusta, podrías agregar una condición para terminar el juego después de un cierto número máximo de intentos o si todos los jugadores se han mojado.
