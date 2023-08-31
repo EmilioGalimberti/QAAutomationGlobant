@@ -14,7 +14,8 @@ public class Hoteles {
     public static void main(String[] args) {
 
         List<Hotel> hoteles = new ArrayList();
-
+        //1500d hace referencia a que es double
+        //1500f hace referencia a que es float
         Hotel1 h1 = new Hotel1(1500d, 9d, 10);
         Hotel2 h2 = new Hotel2(2500d, 12d, 15);
         Hotel3 h3 = new Hotel3(3500d, 15d, 20);
@@ -28,10 +29,14 @@ public class Hoteles {
         hoteles.add(h5);
 
         for (Hotel aux : hoteles) {
-            
+            //si no fuera por los continue, hotel 5 como ejemplo de herencia, seria una intancia de hotel1,hotel2,hotel3,hotel4 y hotel5
+            //por eso el if lo hacemos desde hotel 5 a hotel1
             if (aux instanceof Hotel5) {
+                //a auxiliar casteo a hotel 5
+                // osea lo convierte, igual tampoco entieendo
                 Hotel5 object = (Hotel5) aux;
                 System.out.println("Soy un Hotel 5");
+                //pasa al siguiente objeto en la lista
                 continue;
             }
 
