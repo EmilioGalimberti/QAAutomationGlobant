@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ba0ffcce-690a-46f1-b29f-969bf25dc408" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Hoteles/src/hoteles/out/production/hoteles/hoteles/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hoteles/src/hoteles/out/production/hoteles/hoteles/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hoteles/src/hoteles/out/production/hoteles/hoteles/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hoteles/src/hoteles/out/production/hoteles/hoteles/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hoteles/src/hoteles/out/production/hoteles/hoteles/Hoteles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hoteles/src/hoteles/out/production/hoteles/hoteles/entidades/Hotel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hoteles/src/hoteles/out/production/hoteles/hoteles/entidades/Hotel1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hoteles/src/hoteles/out/production/hoteles/hoteles/entidades/Hotel2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hoteles/src/hoteles/out/production/hoteles/hoteles/entidades/Hotel3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hoteles/src/hoteles/out/production/hoteles/hoteles/entidades/Hotel4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hoteles/src/hoteles/out/production/hoteles/hoteles/entidades/Hotel5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hoteles/src/hoteles/out/production/hoteles/hoteles/hoteles.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2V5U8h1FVaqHHLS8uWF9XY3JpHK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba0ffcce-690a-46f1-b29f-969bf25dc408" name="Changes" comment="" />
+      <created>1694125279453</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694125279453</updated>
+      <workItem from="1694125280382" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
