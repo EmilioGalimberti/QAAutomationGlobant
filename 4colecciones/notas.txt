@@ -9,3 +9,5 @@ cada uno tiene sus tipos
 tambien estan los iterator lo voy a utilizar para elimanr elementos
 
 Comparator para comparar 
+
+https://www.youtube.com/playlist?list=PLgwlfcqa5h3xrtCyk4wz_U_OiBZWVhw2w
